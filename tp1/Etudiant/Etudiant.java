@@ -11,21 +11,35 @@ public class Etudiant extends Personne{
 		this.banque = banque;
 		this.adr = adr;
 	}
+
 	public void setNumEtudiant(int numEtudiant){
 		this.numEtudiant = numEtudiant;
 	}
+
 	public void setNiveau(String niveau){
 		this.niveau = niveau;
 	}
+
 	public int getNumEtudiant(){
 		return numEtudiant;
 	}
+
 	public String getNiveau(){
 		return niveau;
 	}
+
+	public void setCompteBancaire(CompteBancaire banque){
+		this.banque = banque;
+	}
+
 	public CompteBancaire getCompteBancaire(){
 		return banque;
 	}
+
+	public void setAdresse(Adresse adr){
+		this.adr = adr;
+	}
+
 	public Adresse getAdresse(){
 		return adr ;
 	}
