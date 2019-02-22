@@ -1,0 +1,1 @@
+java -Djava.security.policy=grant.policy -Djava.rmi.server.codebase=http://192.168.43.38:8080/ DynamicClient a baba 8 -8
