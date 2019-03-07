@@ -7,7 +7,7 @@ public class Consommateur extends Thread {
     }
     public void run() {
         int val = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             val = buf.prendre();
             System.out.println("Consommateur #" + 
                   this.identité + " prend: " + val);

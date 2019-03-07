@@ -28,8 +28,10 @@ public class Banque implements Runnable {
 	public void run() {
 		try {
 			for (int i = 1; i < 10; i++) {
+			synchronized(System.out){
 				liquide(100 * i);
 				Thread.currentThread().sleep(100 + 10 * i);
+			}
 			}
 		} catch(InterruptedException e) {
 

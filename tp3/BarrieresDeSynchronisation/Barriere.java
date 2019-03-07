@@ -10,7 +10,7 @@ public class Barriere{
         nombreActif++;
         try
         {
-            if(nombreActif==nombreTotal) notifyAll();
+            if(nombreActif==nombreTotal){notifyAll(); nombreActif = 0 ;}
             else wait();
         }
             catch (InterruptedException e) {e.printStackTrace();}
