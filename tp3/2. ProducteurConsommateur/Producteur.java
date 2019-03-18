@@ -1,13 +1,13 @@
 public class Producteur extends Thread {
     private Buffer buf;
-    private int identité;
+    private int identite;
     public Producteur(Buffer c, int n) {
-        buf = c; this.identité = n;
+        buf = c; this.identite = n;
     }
 public void run() {
    for (int i = 0; i < 100; i++) {
        buf.mettre(i);
-       System.out.println("Producteur #" + this.identité 
+       System.out.println("Producteur #" + this.identite 
                         + " met : " + i);
        try { sleep((int)(Math.random() * 100));}
        catch (InterruptedException e) { }

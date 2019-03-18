@@ -7,9 +7,10 @@ public class Joueur extends Thread {
 	}
 	public void run() {
 		//echauffement
-        System.out.println( id +" en attente");
+		for (int i = 0; i < 1000; i++)
+		System.out.println(id + ": " + i);
 		b.attendre();
 		//commencer la course
-		System.out.println(id + " a terminé!");
+		System.out.println(id + " a termine!");
 	}
 }
