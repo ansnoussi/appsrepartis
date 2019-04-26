@@ -16,7 +16,6 @@ class ServeurSimple {
             System.err.println("Impossible de creer un ServerSocket");
             return;
         }
-        
         System.out.println("Serveur l' coute sur le port :" + port);
         while (true) {
             try {
