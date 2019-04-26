@@ -53,19 +53,19 @@ public class Personne implements java.io.Externalizable {
 
    public void writeExternal(final ObjectOutput out) throws IOException {
 
-out.writeUTF(new StringBuilder(this.nom).reverse().toString().toUpperCase());
-out.writeUTF(new StringBuilder(this.prenom).reverse().toString().toUpperCase());
-out.writeInt(this.taille * 2019 );
-out.writeUTF(new StringBuilder(Integer.toString(Integer.parseInt(this.codeSecret) * 19)).reverse().toString());
+    out.writeUTF(new StringBuilder(this.nom).reverse().toString().toUpperCase());
+    out.writeUTF(new StringBuilder(this.prenom).reverse().toString().toUpperCase());
+    out.writeInt(this.taille * 2019 );
+    out.writeUTF(new StringBuilder(Integer.toString(Integer.parseInt(this.codeSecret) * 19)).reverse().toString());
 }
 
 
-public void readExternal(final ObjectInput in) throws IOException, ClassNotFoundException {
+   public void readExternal(final ObjectInput in) throws IOException, ClassNotFoundException {
 
-this.nom = new StringBuilder(in.readUTF()).reverse().toString().toLowerCase();
-this.prenom = new StringBuilder(in.readUTF()).reverse().toString().toLowerCase();
-this.taille = (in.readInt()) /2019 ;
-this.codeSecret = new StringBuilder(Integer.toString(Integer.parseInt(in.readUTF()) / 19)).reverse().toString();
-}
+    this.nom = new StringBuilder(in.readUTF()).reverse().toString().toLowerCase();
+    this.prenom = new StringBuilder(in.readUTF()).reverse().toString().toLowerCase();
+    this.taille = (in.readInt()) /2019 ;
+    this.codeSecret = new StringBuilder(Integer.toString(Integer.parseInt(in.readUTF()) / 19)).reverse().toString();
+    }
 
 } 

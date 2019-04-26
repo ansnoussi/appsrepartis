@@ -7,9 +7,8 @@ public MyThread(int n){
 }
 
 public void run(){
-System.out.print(number + " ");
  System.out.print(number + " ");
-
+ System.out.print(number + " ");
 }
 
 public static void main(String [] args){

@@ -10,7 +10,8 @@ public class SerializerEtudiant {
 			ObjectOutputStream oos = new ObjectOutputStream(fichier);       
 			oos.writeObject(etudiant);       
 			oos.flush();       
-			oos.close();}     
+			oos.close();
+			}     
 			catch (java.io.IOException e) {
 				e.printStackTrace();}
 			}
